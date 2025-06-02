@@ -14,14 +14,14 @@
         <nav class="navbar">
             <div class="logo"><img src="assets/Images/Colone PNG.png" alt="" id="logo"></div>
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="shop.php">Shop</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
             <div class="icons">
                 <span><img src="assets/Images/chercher.png" alt="" id="recherche"></span>
-                <span><img src="assets/Images/la-personne.png" alt="" id="la-personne"></span>
+    <span><a href="profil.php"><img src="assets/Images/la-personne.png" alt="" id="la-personne"></a></span>
                 <span><img src="assets/Images/coeur.png" alt=""></span>
                <span><a href="add_to_cart.php"><img src="assets/Images/sac-de-courses.png" alt="Panier"></a></span>
 
@@ -42,7 +42,7 @@
         <div class="section-container">
             <div class="story-content">
                 <h2>Since 2024</h2>
-                <p>Founded in 2034, our company was born from a shared passion for creating quality products that
+                <p>Founded in 2024, our company was born from a shared passion for creating quality products that
                     improve everyday life. What started as a small family workshop quickly became a
                     benchmark in our sector.</p>
                 <p>Today, we are proud to have more than 50 passionate employees and to have satisfied
@@ -96,24 +96,54 @@
                     <p>Founder & CEO</p>
                 </div>
                 
+                <div class="team-member">
+                    <img src="assets/Images/slime.jpg" alt="Membre d'équipe">
+                    <h3>Sousou Slim</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                
             </div>
         </div>
     </section>
 
 
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 My Website | All rights reserved</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/faiz.walha.1"><img src="assets/Images/facebook (1).png" alt=""><i
-                        class="fab fa-facebook"></i></a>
-                <a href="#"><img src="assets/Images/tic-tac.png" alt=""><i class="fab fa-tiktok"></i></a>
-                <a href="#"><img src="assets/Images/instagram (1).png" alt=""><i class="fab fa-instagram"></i></a>
-               
-            </div>
+   <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 My Website | All rights reserved</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/faiz.walha.1"><img src="assets/Images/facebook (1).png" alt=""></a>
+            <a href="#"><img src="assets/Images/tic-tac.png" alt=""></a>
+            <a href="#"><img src="assets/Images/instagram (1).png" alt=""></a>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<style>
+    /* Style spécifique pour les icônes sociales du footer */
+    .footer .social-icons a img {
+        width: 30px;       /* Largeur des icônes */
+        height: 30px;      /* Hauteur des icônes */
+        margin: 0 10px;    /* Espacement entre les icônes */
+        transition: transform 0.3s ease; /* Animation au survol */
+    }
+    
+    .footer .social-icons a:hover img {
+        transform: scale(1.2); /* Effet d'agrandissement au survol */
+    }
+    
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    .footer-content {
+        text-align: center;
+        padding: 20px 0;
+    }
+</style>
 </body>
 
 </html>

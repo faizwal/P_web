@@ -56,10 +56,6 @@ body {
     color: black;
     font-weight: 500;
 }
-.carte{
-    height: 40px;
-    width: 40px;
-}
 
 .icons span {
     margin: 0 10px;
@@ -252,6 +248,10 @@ add-to-cart {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.media{
+    height: 50px;
+    width: 50px;
+}
 @media (min-width: 768px) {
     .about-story .section-container {
         display: flex;

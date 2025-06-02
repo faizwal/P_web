@@ -33,6 +33,22 @@ class user extends connexion
         return false;
     }
 
-}
 
+ public function updateProfile($userId, $name, $email, $password = null) {
+        try {
+            if ($password) {
+                $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+                $stmt = $this->CNXbase()->prepare("UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?");
+                return $stmt->execute([$name, $email, $hashedPassword, $userId]);
+            } else {
+                $stmt = $this->CNXbase()->prepare("UPDATE users SET name = ?, email = ? WHERE id = ?");
+                return $stmt->execute([$name, $email, $userId]);
+            }
+        } catch (PDOException $e) {
+            error_log("Erreur mise à jour profil: " . $e->getMessage());
+            return false;
+        }
+    }
+
+}
 ?>
